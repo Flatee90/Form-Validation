@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--This form as basic HTML5 validation for required fields with having a minimum and maximum length for the input field
+    for both username and password. All input fields are also required.-->
+    <div id="html5validation">
+        <form action="index.html">
+            <label for="Username">Username</label>
+            <input type="text" required name="username" id="username" minlength="5" maxlength="20">
+            <br><br>
+            <label for="emailAddress">Email</label>
+            <input type="text" required name="email">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="text" required minlength="5" maxlength="20">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <br><br><br>
+    <div id="javascriptValidation">
+        <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+            <label for="Username" id="userName">Username</label>
+            <input required type="text" name="firstName" id="firstname" minlength="5" maxlength="20">
+            <br><br>
+            <label for="email" id="email">Email</label>
+            <input required type="text" name="email" id="emailaddress">
+            <br><br>
+            <label for="password" id="paSsword">Password</label>
+            <input required type="password" name="password" id="password" minlength="5" maxlength="20">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="requirements">
+        <p id="tooshort">&#x2715 Username is too short.</p>
+        <p id="hasi">&#x2713 Username has an I.</p>
+        <p id="toolong">&#x2715 Username is too long.</p>
+        <p id="toolong">&#x2713 Username meets requirement!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+#username {
+    background-color: rgb(255, 0, 157);
+}
+
+#username:invalid {
+    background-color: pink;
+}
+
+#username:valid {
+    background-color: rgb(147, 226, 43);
+}
+
+#javascriptValidation {
+    border-style: dotted;
+    color: rgb(43, 226, 202);
+    width: fit-content;
+}
+
+#requirements {
+    margin-left: 4%;
+}
+
+#html5validation {
+    border-style: groove;
+    color: cornflowerblue;
+    width: fit-content;
+}
