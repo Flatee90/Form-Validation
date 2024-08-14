@@ -58,8 +58,8 @@ function handleChangeInI() {
     }
 }
 
-firstNameInput.addEventListener("input", handleChangeInUsername);
-firstNameInput.addEventListener("input", handleChangeInI);
+firstnameInput.addEventListener("input", handleChangeInUsername);
+firstnameInput.addEventListener("input", handleChangeInI);
 
 function validateEmailInput(emailAddress) {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
